@@ -18,11 +18,7 @@ int cal(int sm, int sd, int sy, int em, int ed, int ey)
 	int sum = 0;
 	for (int i = sy + 1; i < ey; i ++)
 		if (isRun(i))
-		{
 			sum ++;
-			i += 4;
-			continue;
-		}
 	if (sy == ey && isRun(sy))
 	{
 		if ( ( em == 1 || (em == 2 && ed < 29) ) 
